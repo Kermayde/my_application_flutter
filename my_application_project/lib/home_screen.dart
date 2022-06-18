@@ -38,7 +38,7 @@ class _HomescreenState extends State<Homescreen>{
     });
 
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 139, 153, 159),
+      backgroundColor: Color.fromARGB(255, 188, 216, 229),
       appBar: AppBar(title: const Text("calculation"), elevation: 0, backgroundColor:  Color.fromARGB(255, 8, 147, 169)),
 
       drawer: Drawer(
@@ -47,7 +47,7 @@ class _HomescreenState extends State<Homescreen>{
             children: <Widget>[
               const DrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Color.fromARGB(255, 243, 33, 121),
                 ),
                 child: Text(
                   'My app',             //´´´´
@@ -85,7 +85,7 @@ class _HomescreenState extends State<Homescreen>{
             controller: textcont1,
             decoration: InputDecoration(
               labelText: 'amont',
-              focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color.fromARGB(255, 79, 212, 233))),
+              focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color.fromARGB(255, 185, 199, 66))),
           ),
           keyboardType: TextInputType.number,
         ),
@@ -116,7 +116,7 @@ class _HomescreenState extends State<Homescreen>{
           Center(
             child:
           ElevatedButton(
-            style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 51, 165, 207))),
+            style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 51, 108, 207))),
             onPressed: () {
               restip = (double.parse(textcont1.text) * double.parse(textcont2.text)) / 100;
               setDefaultValues(double.parse(textcont2.text));

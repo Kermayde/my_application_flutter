@@ -19,7 +19,7 @@ class _secondscr extends  State<StatefulWidget>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 139, 153, 159),
+      backgroundColor: Color.fromARGB(255, 173, 202, 214),
       appBar: AppBar(title: const Text("calculation"), elevation: 0, backgroundColor:  Color.fromARGB(255, 8, 147, 169)),
 
       body: Column(
@@ -42,7 +42,7 @@ class _secondscr extends  State<StatefulWidget>{
           Center(
             child:
           ElevatedButton(
-            style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 51, 165, 207))),
+            style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 51, 113, 207))),
             onPressed: () {
               restipsec = double.parse(textcontsec.text);
               final route = MaterialPageRoute(builder: (context) =>  Homescreen(restipsec));
